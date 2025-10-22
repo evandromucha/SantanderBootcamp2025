@@ -2,10 +2,10 @@
 
 **Plataforma:** DIO.me | **Curso:** Santander Cibersegurança 2025
 
-* **Autor:** Evandro Mucha
-* **Data de Execução:** 22 de outubro de 2025
-* **GitHub:** [evandromucha](https://github.com/evandromucha)
-* **LinkedIn:** [Evandro Mucha](https://br.linkedin.com/in/evandromucha)
+**Autor:** Evandro Mucha
+**Data de Execução:** 22 de outubro de 2025
+**GitHub:** [evandromucha](https://github.com/evandromucha)
+**LinkedIn:** [Evandro Mucha](https://br.linkedin.com/in/evandromucha)
 
 ---
 
@@ -35,15 +35,15 @@ O foco do estudo foi identificar serviços vulneráveis (como FTP, HTTP, SMB) na
 
 ## 🛠️ Tecnologias Utilizadas
 
-Liste as principais ferramentas, frameworks e linguagens que você utilizou.
+A execução deste projeto dependeu de um ambiente de laboratório controlado. Abaixo estão os principais componentes e ferramentas utilizados:
 
-* **Linguagem:** [Ex: Java 17, Kotlin, Python 3.10]
-* **Framework:** [Ex: Spring Boot 3, Angular 17, React, Flask]
-* **Banco de Dados:** [Ex: PostgreSQL, MySQL, H2 Database, MongoDB]
-* **Testes:** [Ex: JUnit 5, Mockito, Jest]
-* **Cloud:** [Ex: AWS, Google Cloud (se aplicável)]
-* **Outros:** [Ex: Docker, Git, Postman, Swagger/OpenAPI]
+* **Oracle VirtualBox:** Software de virtualização (hypervisor) que permitiu a criação de um ambiente de rede isolado. Foi utilizado para hospedar e executar a máquina virtual alvo (Metasploitable 2) de forma segura, sem expô-la a redes externas.
 
+* **Metasploitable 2:** A máquina virtual alvo. É um sistema operacional baseado em Linux (Ubuntu) intencionalmente projetado pela Rapid7 com uma vasta gama de vulnerabilidades de segurança. Serve como um "laboratório" legal e ético para praticar técnicas de pentest.
+
+* **Kali Linux (via WSL 2):** A distribuição Linux utilizada como máquina atacante. É o padrão da indústria para testes de invasão, pois vem pré-carregada com um extenso arsenal de ferramentas de segurança. Foi executada via WSL (Windows Subsystem for Linux) para integração direta com o host Windows.
+
+* **Medusa:** Uma ferramenta de linha de comando especializada em ataques de força bruta. Foi a principal ferramenta utilizada para automatizar a descoberta de credenciais, testando rapidamente milhares de combinações de usuário e senha contra serviços de rede como FTP e SMB.
 ---
 
 ## ✨ Funcionalidades
