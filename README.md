@@ -1,4 +1,4 @@
-# [NOME DO SEU PROJETO] - Santander Bootcamp 2025 | [Trilha: Java/Kotlin/IA/etc.]
+# Simulando um Ataque de Brute Force de Senhas com Medusa e Kali Linux - DIO.me | Santander Bootcamp 2025
 
 <p align="center">
   <img src="https://img.shields.io/badge/Santander_Bootcamp-2025-EC0000?style=for-the-badge&logo=santander" alt="Santander Bootcamp 2025"/>
