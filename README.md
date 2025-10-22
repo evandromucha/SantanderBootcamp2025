@@ -35,7 +35,7 @@ O laboratório foi configurado utilizando duas máquinas em uma rede interna e i
 
 * **Máquina Atacante:** Kali Linux, executado diretamente no Windows através do WSL 2 (Windows Subsystem for Linux). Esta abordagem permite o uso nativo das ferramentas do Kali sem a necessidade de uma máquina virtual separada para o atacante.
 
-* **Máquina Alvo:** Metasploitable 2, uma imagem de máquina virtual baseada em Ubuntu e intencionalmente vulnerável, projetada especificamente para treinamento de segurança. Esta VM foi executada no Oracle VirtualBox.
+* **Máquina Alvo:** `192.168.7.232` Metasploitable 2, uma imagem de máquina virtual baseada em Ubuntu e intencionalmente vulnerável, projetada especificamente para treinamento de segurança. Esta VM foi executada no Oracle VirtualBox.
 
 O foco do estudo foi identificar serviços vulneráveis (como FTP, HTTP, SMB) na máquina alvo e demonstrar como credenciais fracas e configurações inseguras podem ser exploradas usando ferramentas padrão da indústria.
 
@@ -52,19 +52,10 @@ A execução deste projeto dependeu de um ambiente de laboratório controlado. A
 * **Kali Linux (via WSL 2):** A distribuição Linux utilizada como máquina atacante. É o padrão da indústria para testes de invasão, pois vem pré-carregada com um extenso arsenal de ferramentas de segurança. Foi executada via WSL (Windows Subsystem for Linux) para integração direta com o host Windows.
 
 * **Medusa:** Uma ferramenta de linha de comando especializada em ataques de força bruta. Foi a principal ferramenta utilizada para automatizar a descoberta de credenciais, testando rapidamente milhares de combinações de usuário e senha contra serviços de rede como FTP e SMB.
----
 
-## ✨ Funcionalidades
-
-Descreva o que o projeto é capaz de fazer. Use uma lista para ficar mais claro.
-
-* **[Ex: Cadastro de Usuário]**: Permite a criação de novos usuários no sistema.
-* **[Ex: Consulta de Saldo]**: Endpoint que retorna o saldo atual do cliente.
-* **[Ex: Transferência Bancária]**: Lógica de negócio para transferir valores entre contas.
-* **[Ex: Geração de Cartão Virtual]**: (Se for um projeto mais complexo).
-
-*(Opcional: Se seu projeto tiver uma interface visual, coloque screenshots ou GIFs aqui!)*
 ---
 
 ## ▶️ Execução
+
+O primeiro passo é certificar que a máquina alvo é encontrada na rede, neste caso o endereço IP da mesma é `192.168.7.232`:
 
