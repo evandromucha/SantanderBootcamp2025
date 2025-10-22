@@ -6,6 +6,13 @@
 
 ---
 
+* **Autor:** Evandro Mucha
+* **Data de Execução:** 22 de outubro de 2025
+* **GitHub:** [evandromucha](https://github.com/evandromucha)
+* **LinkedIn:** [Evandro Mucha](https://br.linkedin.com/in/evandromucha)
+
+---
+
 ## 📖 Índice
 
 * [Sobre o Projeto](#-sobre-o-projeto)
