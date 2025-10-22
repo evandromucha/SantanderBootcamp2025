@@ -13,8 +13,8 @@
 
 * [Sobre o Projeto](#-sobre-o-projeto)
 * [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-* [Funcionalidades](#-funcionalidades)
-* [Como Executar](#-como-executar)
+* [Execução](#-execução)
+* [Conclusão](#-conclusão)
 * [Autor](#-autor)
 
 ---
@@ -29,7 +29,7 @@ ___
 
 ## 🚀 Sobre o Projeto
 
-Este projeto documenta uma análise de vulnerabilidades e um pentest simulado, executados em um ambiente de laboratório estritamente controlado e isolado. O objetivo principal foi aplicar técnicas de reconhecimento e exploração de serviços para fins estritamente educacionais, como parte do desafio do Bootcamp Santander 2025.
+Este projeto documenta uma análise de vulnerabilidades e um pentest simulado, executados em um ambiente de laboratório estritamente controlado e isolado. O objetivo principal foi aplicar técnicas de reconhecimento e exploração de serviços para fins estritamente educacionais, como parte do desafio do Santander Cibersegurança 2025.
 
 O laboratório foi configurado utilizando duas máquinas em uma rede interna e isolada:
 
@@ -66,42 +66,5 @@ Descreva o que o projeto é capaz de fazer. Use uma lista para ficar mais claro.
 *(Opcional: Se seu projeto tiver uma interface visual, coloque screenshots ou GIFs aqui!)*
 ---
 
-## ▶️ Como Executar
+## ▶️ Execução
 
-Forneça um guia passo a passo para que outra pessoa possa rodar o seu projeto localmente.
-
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-
-* [Java 17 (ou a versão que usou)]
-* [Maven ou Gradle]
-* [Seu SGBD (Ex: PostgreSQL) rodando na porta Padrão]
-* [Git]
-* [IDE de sua preferência (Ex: IntelliJ, VSCode)]
-
-### Rodando o Projeto
-
-```bash
-# 1. Clone o repositório
-git clone [URL_DO_SEU_REPOSITÓRIO_AQUI]
-
-# 2. Acesse a pasta do projeto
-cd [NOME_DA_PASTA_DO_PROJETO]
-
-# 3. Configure as variáveis de ambiente (se houver)
-# Crie um arquivo `.env` ou altere o `application.properties`
-# Exemplo para application.properties:
-# SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/meu_banco
-# SPRING_DATASOURCE_USERNAME=seu_usuario
-# SPRING_DATASOURCE_PASSWORD=sua_senha
-
-# 4. Instale as dependências (Exemplo com Maven)
-mvn clean install
-
-# 5. Execute a aplicação (Exemplo com Spring Boot)
-mvn spring-boot:run
-
-# 6. (Opcional) Acesse a documentação da API (se houver)
-# A aplicação estará disponível em http://localhost:8080
-# A documentação do Swagger/OpenAPI pode ser acessada em http://localhost:8080/swagger-ui.html
