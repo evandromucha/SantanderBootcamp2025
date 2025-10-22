@@ -1,7 +1,8 @@
-# Simulando um Ataque de Brute Force de Senhas com Medusa no Kali Linux - DIO.me | Santander Bootcamp 2025
+# Simulando um Ataque de Brute Force de Senhas com Medusa no Kali Linux
+# DIO.me | Santander Bootcamp 2025
 
 <p align="center">
-  Projeto [Ataque de Brute Force de Senhas com Medusa] desenvolvido durante o Bootcamp Santander 2025, em parceria com a DIO.me.
+  Projeto [Ataque de Brute Force de Senhas com Medusa] experimentado durante o Bootcamp Santander 2025, em parceria com a DIO.me.
 </p>
 
 ---
@@ -25,12 +26,15 @@
 
 ## 🚀 Sobre o Projeto
 
-[Aqui você deve dar uma descrição clara e concisa do que o seu projeto faz. Tente responder:]
+Este projeto documenta uma análise de vulnerabilidades e um pentest simulado, executados em um ambiente de laboratório estritamente controlado e isolado. O objetivo principal foi aplicar técnicas de reconhecimento e exploração de serviços para fins estritamente educacionais, como parte do desafio do Bootcamp Santander 2025.
 
-* **Qual problema ele resolve?** (Ex: "Uma API REST para gerenciamento de clientes de um banco digital.")
-* **Qual foi o desafio proposto?** (Ex: "Implementar um sistema de recomendações de investimentos com base no perfil do usuário.")
-* **Qual o principal objetivo?** (Ex: "Consolidar os conhecimentos em Spring Boot, padrão DTO e boas práticas de API RESTful.")
+O laboratório foi configurado utilizando duas máquinas em uma rede interna e isolada:
 
+Máquina Atacante: Kali Linux, executado diretamente no Windows através do WSL 2 (Windows Subsystem for Linux). Esta abordagem permite o uso nativo das ferramentas do Kali sem a necessidade de uma máquina virtual separada para o atacante.
+
+Máquina Alvo: Metasploitable 2, uma imagem de máquina virtual baseada em Ubuntu e intencionalmente vulnerável, projetada especificamente para treinamento de segurança. Esta VM foi executada no Oracle VirtualBox.
+
+O foco do estudo foi identificar serviços vulneráveis (como FTP, HTTP, SMB) na máquina alvo e demonstrar como credenciais fracas e configurações inseguras podem ser exploradas usando ferramentas padrão da indústria.
 ---
 
 ## 🛠️ Tecnologias Utilizadas
