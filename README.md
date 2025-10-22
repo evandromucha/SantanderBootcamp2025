@@ -1,12 +1,6 @@
 # Simulando um Ataque de Brute Force de Senhas com Medusa no Kali Linux - DIO.me | Santander Bootcamp 2025
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Santander_Bootcamp-2025-EC0000?style=for-the-badge&logo=santander" alt="Santander Bootcamp 2025"/>
-  <img src="https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="DIO.me"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-3-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot 3"/>
-  </p>
-
-<p align="center">
   Projeto [Ataque de Brute Force de Senhas com Medusa] desenvolvido durante o Bootcamp Santander 2025, em parceria com a DIO.me.
 </p>
 
