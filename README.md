@@ -1,9 +1,6 @@
-## Simulando um Ataque de Brute Force de Senhas com Medusa
+# Simulando um Ataque de Brute Force de Senhas com Medusa
 
----
-
-**Plataforma:** DIO.me
-**Curso:** Santander Cibersegurança 2025
+**Plataforma:** DIO.me | **Curso:** Santander Cibersegurança 2025
 
 * **Autor:** Evandro Mucha
 * **Data de Execução:** 22 de outubro de 2025
