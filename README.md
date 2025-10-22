@@ -1,9 +1,5 @@
 # Simulando um Ataque de Brute Force de Senhas com Medusa no Kali Linux
-# DIO.me | Santander Bootcamp 2025
-
-<p align="center">
-  Projeto [Ataque de Brute Force de Senhas com Medusa] experimentado durante o Bootcamp Santander 2025, em parceria com a DIO.me.
-</p>
+DIO.me | Santander Bootcamp 2025
 
 ---
 
