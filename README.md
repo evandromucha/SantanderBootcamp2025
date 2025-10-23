@@ -136,13 +136,13 @@ Aqui vamos testar a técnica de *password spraying* onde utilizamos um número p
 Utilizei o `enum4linux` para encontrar uma lista de nomes de usuários possíveis no alvo:
 
 <p align="center">
-  <img src="images/enum4linux.png" width="550"/>
+  <img src="images/enum4linux.png" width="650"/>
 </p>
 
 O resultado da busca foi guardado no arquivo [enum4_output.txt](images/enum4_output.txt) e a parte principal foi a lista de possíveis usuários do serviço alvo:
 
 <p align="center">
-  <img src="images/enum4_users.png" width="550"/>
+  <img src="images/enum4_users.png" width="650"/>
 </p>
 
 A partir disso, criei dois novos arquivos de *world lists* para esse teste: [usuários](images/smb_user.txt) e [senhas](images/senhas_spray.txt)
