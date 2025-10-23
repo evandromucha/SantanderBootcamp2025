@@ -59,7 +59,7 @@ A execução deste projeto dependeu de um ambiente de laboratório controlado. A
 
 * **Kali Linux (via WSL 2):** A distribuição Linux utilizada como máquina atacante. É o padrão da indústria para testes de invasão, pois vem pré-carregada com um extenso arsenal de ferramentas de segurança. Foi executada via WSL (Windows Subsystem for Linux) para integração direta com o host Windows.
 
-* **Nmap:** Ferramenta essencial para o reconhecimento e mapeamento de rede. Ele é utilizado para varredura de portas, identificando serviços ativos e as versões de software em execução no alvo. No pentest, o Nmap é o ponto de partida para descobrir a superfície de ataque da máquina alvo.
+* **nmap:** Ferramenta essencial para o reconhecimento e mapeamento de rede. Ele é utilizado para varredura de portas, identificando serviços ativos e as versões de software em execução no alvo. No pentest, o Nmap é o ponto de partida para descobrir a superfície de ataque da máquina alvo.
 
 * **medusa:** Uma ferramenta de linha de comando especializada em ataques de força bruta. Foi a principal ferramenta utilizada para automatizar a descoberta de credenciais, testando rapidamente milhares de combinações de usuário e senha contra serviços de rede como FTP e SMB.
 
