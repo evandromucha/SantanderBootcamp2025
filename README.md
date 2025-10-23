@@ -70,6 +70,8 @@ Feito isso, utilizo o `nmap` para verificar as portas:
   <img src="images/nmap.png" width="500"/>
 </p>
 
+## Ganhar acesso ao `FTP`:
+
 Testei a conexão `ftp` para verificar se o serviço estava mesmo ativo.  
 O próximo passo foi gerar as *world lists* com os nomes de [usuários](images/users.txt) e [senhas](pass.txt) :
 
@@ -88,3 +90,31 @@ Com as credenciais encontradas, testei o acesso `ftp` com sucesso:
 <p align="center">
   <img src="images/ftp_ok.png" width="350"/>
 </p>
+
+## Gahar acesso `HTTP`:
+
+Verifiquei a página de *login* em `http://192.168.7.232/dvwa/login.php`:
+
+<p align="center">
+  <img src="images/login_page.png" width="350"/>
+</p>
+
+Utilizei o `medusa` com as *world lists* (utilizadas anteriormente) para verificar se alguma combinação de [usuário](images/users.txt) e [senha](images/pass.txt) eram válidos:
+
+<p align="center">
+  <img src="images/medusa_http.png" width="350"/>
+</p>
+
+Como resultado, obtive o usuário *admin* e a senha *password*, testadas na página de *login*:
+
+<p align="center">
+  <img src="images/login.png" width="350"/>
+</p>
+
+Confirmado o acesso com as credenciais encontradas:
+
+<p align="center">
+  <img src="images/login_ok.png" width="350"/>
+</p>
+
+## Gahar acesso `SMB`:
