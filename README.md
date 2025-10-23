@@ -106,7 +106,7 @@ Com as credenciais encontradas, testei o acesso `ftp` com sucesso:
 
 ## Ganhar acesso `HTTP`:
 
-Verifiquei a página de *login* em `http://192.168.7.232/dvwa/login.php`:
+Verifiquei a página de *login* em `http://192.168.7.232/dvwa/login.php` e identificamos que é um sistema de *login state less*:
 
 <p align="center">
   <img src="images/login_page.png" width="550"/>
@@ -133,8 +133,19 @@ Confirmado o acesso com as credenciais encontradas:
 ## Ganhar acesso `SMB`:
 
 Aqui vamos testar a técnica de *password spraying* onde utilizamos um número pequeno de senhas contra muitas contas de usuário diferentes.
+Utilizei o `enum4linux` para encontrar uma lista de nomes de usuários possíveis no alvo:
 
-Criei dois novos arquivos de *world lists* para esse teste: [usuários](images/smb_user.txt) e [senhas](images/senhas_spray.txt)
+<p align="center">
+  <img src="images/enum4linux.png" width="550"/>
+</p>
+
+O resultado da busca foi guardado no arquivo [enum4_output.txt](images/enum4_output.txt) e a parte principal foi a lista de possíveis usuários do serviço alvo:
+
+<p align="center">
+  <img src="images/enum4_users.png" width="550"/>
+</p>
+
+A partir disso, criei dois novos arquivos de *world lists* para esse teste: [usuários](images/smb_user.txt) e [senhas](images/senhas_spray.txt)
 Utilizei o `medusa` para a busca de credenciais válidas:
 
 <p align="center">
