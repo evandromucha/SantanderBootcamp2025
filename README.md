@@ -158,13 +158,13 @@ A partir disso, criei dois novos arquivos de *world lists* para esse teste: [usu
 Utilizei o `medusa` para a busca de credenciais válidas:
 
 <p align="center">
-  <img src="images/medusa_smb.png" width="1000"/>
+  <img src="images/medusa_smb.png" width="1200"/>
 </p>
 
 As credenciais encontradas foram `msfadmin`para usuário e `msfadmin` para senha, com esses dados, confimei o acesso ao serviço:
 
 <p align="center">
-  <img src="images/smb_ok.png" width="850"/>
+  <img src="images/smb_ok.png" width="1000"/>
 </p>
 
 ---
