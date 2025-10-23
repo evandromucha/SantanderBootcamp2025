@@ -1,4 +1,4 @@
-## Estudo de Caso: Análise de Vulnerabilidades e Ataques de Força Bruta no Metasploitable 2
+# Estudo de Caso: Análise de Vulnerabilidades e Ataques de Força Bruta no Metasploitable 2
 
 <p align="center">
   <img src="https://img.shields.io/badge/Santander_Cibersegurança-2025-EC0000?style=for-the-badge&logo=santander" alt="Santander Cibersegurança 2025"/>
@@ -8,14 +8,14 @@
 
 * **Autor:** Evandro Mucha
 * **Data de Execução:** 22 de outubro de 2025
-* **GitHub:** [evandromucha](https://github.com/evandromucha)
 * **LinkedIn:** [Evandro Mucha](https://br.linkedin.com/in/evandromucha)
 
 ---
 
-### 📖 Índice
+## Índice
 
-* [Sobre o Projeto](#-sobre-o-projeto)
+* [Aviso Ético e de Responsabildiade](#-aviso-ético-e-de-responsabilidade) 
+* [1. Sobre o Projeto](#-sobre-o-projeto)
 * [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 * [Execução](#-execução)
 * [Recomendações de Mitigação](#-recomendações-de-mitigação)
@@ -23,7 +23,7 @@
 
 ---
 
-### ⚠️ Aviso Ético e de Responsabilidade
+## Aviso Ético e de Responsabilidade
 
 Este estudo foi conduzido em um ambiente de laboratório virtual, isolado e controlado.
 Todas as técnicas de enumeração de serviços e ataques de força bruta foram aplicadas para fins estritamente educacionais e como parte do desafio de projeto do Santander Cibersegurança 2025.
@@ -31,7 +31,7 @@ Nunca realize testes de invasão, varreduras de vulnerabilidade ou qualquer tipo
 
 ___
 
-### 🚀 Sobre o Projeto
+## 1. Sobre o Projeto
 
 Este estudo documenta uma análise de vulnerabilidades e um pentest simulado, executados em um ambiente de laboratório estritamente controlado e isolado. O objetivo principal foi aplicar técnicas de reconhecimento e exploração de serviços para fins estritamente educacionais, como parte do desafio do Santander Cibersegurança 2025.
 
@@ -45,7 +45,7 @@ O foco do estudo foi identificar serviços vulneráveis (como FTP, HTTP, SMB) na
 
 ---
 
-### 🛠️ Ambiente e Tecnologias Utilizadas
+## 2. Ambiente e Tecnologias Utilizadas
 
 A execução deste projeto dependeu de um ambiente de laboratório controlado. Abaixo estão os principais componentes e ferramentas utilizados:
 
@@ -63,11 +63,11 @@ A execução deste projeto dependeu de um ambiente de laboratório controlado. A
   
 ---
 
-### ▶️ Execução
+## 3. Execução
 
 O teste seguiu uma metodologia simplificada de pentest, focando nas fases de Reconhecimento e Ganho de Acesso. O endereço IP da máquina alvo é `192.168.7.232`.
 
-### Comunicação Inicial
+## 3.1. Comunicação Inicial
 
 O primeiro passo foi certificar que a máquina alvo é encontrada na rede.
 <p align="center">
@@ -82,7 +82,7 @@ Feito isso, utilizo o `nmap` para verificar as portas:
 
 Testei a conexão `ftp` para verificar se o serviço estava ativo.
 
-## Ganhar acesso ao `FTP` (porta 21):
+## 3.2. Ganhar acesso ao `FTP` (porta 21):
 
   
 O próximo passo foi gerar as *world lists* com os nomes de [usuários](images/users.txt) e [senhas](pass.txt) :
@@ -103,7 +103,7 @@ Com as credenciais encontradas, testei o acesso `ftp` com sucesso:
   <img src="images/ftp_ok.png" width="300"/>
 </p>
 
-## Ganhar acesso `HTTP` (DVWA - porta 80):
+## 3.3. Ganhar acesso `HTTP` (DVWA - porta 80):
 
 Verifiquei a página de *login* em `http://192.168.7.232/dvwa/login.php` e inspecionei a requisição de *login* no navegador.
 
@@ -129,11 +129,11 @@ Confirmado o acesso com as credenciais encontradas:
   <img src="images/login_ok.png" width="550"/>
 </p>
 
-## Ganhar acesso `SMB` (portas 139/445:
+## 3.4. Ganhar acesso `SMB` (portas 139/445:
 
 Aqui vamos testar a técnica de *password spraying* onde utilizamos um número pequeno de senhas contra muitas contas de usuário diferentes.
 
-####1. Enumeração de usuários
+#### a. Enumeração de usuários
 
 Utilizei o `enum4linux` para encontrar uma lista de nomes de usuários possíveis no alvo:
 
@@ -149,7 +149,7 @@ O resultado da busca foi guardado no arquivo [enum4_output.txt](images/enum4_out
 
 A partir disso, criei dois novos arquivos de *world lists* para esse teste: [usuários](images/smb_user.txt) e [senhas](images/senhas_spray.txt)
 
-#### 2. Ataque de Password Spraying
+#### b. Ataque de Password Spraying
 
 Utilizei o `medusa` para a busca de credenciais válidas:
 
@@ -167,10 +167,10 @@ As credenciais encontradas foram `msfadmin`para usuário e `msfadmin` para senha
 
 ## 4. Recomendações de Mitigação
 
-1.  **Políticas de Senhas Fortes:** Implementar uma política que exija senhas complexas e longas. [cite_start]O Metasploitable permitia senhas mínimas de 5 caracteres e não tinha complexidade obrigatória[cite: 5].
-2.  **Bloqueio de Contas (Account Lockout):** Configurar o sistema para bloquear temporariamente uma conta após um número baixo de tentativas de login malsucedidas. [cite_start]O *Account Lockout Threshold* no Metasploitable estava desabilitado[cite: 5].
-3.  **Substituir Serviços Obsoletos:** Substituir protocolos inseguros como FTP por SFTP (via SSH).
-4.  **Segurança em Aplicações Web:** Adicionar mecanismos de defesa como CAPTCHAs, tokens anti-CSRF e limites de taxa de requisições para mitigar ataques em formulários web.
+* **Políticas de Senhas Fortes:** Implementar uma política que exija senhas complexas e longas. O Metasploitable permitia senhas mínimas de 5 caracteres e não tinha complexidade obrigatória.
+* **Bloqueio de Contas (Account Lockout):** Configurar o sistema para bloquear temporariamente uma conta após um número baixo de tentativas de login malsucedidas. O *Account Lockout Threshold* no Metasploitable estava desabilitado.
+* **Substituir Serviços Obsoletos:** Substituir protocolos inseguros como FTP por SFTP (via SSH).
+* **Segurança em Aplicações Web:** Adicionar mecanismos de defesa como CAPTCHAs, tokens anti-CSRF e limites de taxa de requisições para mitigar ataques em formulários web.
 
 ---
 
