@@ -71,8 +71,20 @@ Feito isso, utilizo o `nmap` para verificar as portas:
 </p>
 
 Testei a conexão `ftp` para verificar se o serviço estava mesmo ativo.  
-O próximo passo foi gerar as *world lists* com os nomes de ![usuários](images/users.txt) e ![senhas](pass.txt) :
+O próximo passo foi gerar as *world lists* com os nomes de [usuários](images/users.txt) e [senhas](pass.txt) :
 
 <p align="center">
-  <img src="images/world_list.png" width="400"/>
+  <img src="images/world_list.png" width="450"/>
+</p>
+
+Então, executei o `medusa` para testar as credenciais para acesso ao `ftp`:
+
+<p align="center">
+  <img src="images/medusa_ftp.png" width="500"/>
+</p>
+
+Com as credenciais encontradas, testei o acesso `ftp` com sucesso:
+
+<p align="center">
+  <img src="images/ftp_ok.png" width="350"/>
 </p>
