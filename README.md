@@ -25,7 +25,7 @@
 
 ### ⚠️ Aviso Ético e de Responsabilidade
 
-Este projeto foi conduzido em um ambiente de laboratório virtual, isolado e controlado.
+Este estudo foi conduzido em um ambiente de laboratório virtual, isolado e controlado.
 Todas as técnicas de enumeração de serviços e ataques de força bruta foram aplicadas para fins estritamente educacionais e como parte do desafio de projeto do Santander Cibersegurança 2025.
 Nunca realize testes de invasão, varreduras de vulnerabilidade ou qualquer tipo de ataque em sistemas ou redes para os quais você não possua autorização explícita e por escrito. A utilização dessas ferramentas em ambientes de produção sem permissão é ilegal e antiética.
 
@@ -33,7 +33,7 @@ ___
 
 ### 🚀 Sobre o Projeto
 
-Este projeto documenta uma análise de vulnerabilidades e um pentest simulado, executados em um ambiente de laboratório estritamente controlado e isolado. O objetivo principal foi aplicar técnicas de reconhecimento e exploração de serviços para fins estritamente educacionais, como parte do desafio do Santander Cibersegurança 2025.
+Este estudo documenta uma análise de vulnerabilidades e um pentest simulado, executados em um ambiente de laboratório estritamente controlado e isolado. O objetivo principal foi aplicar técnicas de reconhecimento e exploração de serviços para fins estritamente educacionais, como parte do desafio do Santander Cibersegurança 2025.
 
 O laboratório foi configurado utilizando duas máquinas em uma rede interna e isolada:
 
