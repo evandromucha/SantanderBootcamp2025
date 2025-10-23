@@ -54,6 +54,19 @@ A execução deste projeto dependeu de um ambiente de laboratório controlado. A
 
 * **Medusa:** Uma ferramenta de linha de comando especializada em ataques de força bruta. Foi a principal ferramenta utilizada para automatizar a descoberta de credenciais, testando rapidamente milhares de combinações de usuário e senha contra serviços de rede como FTP e SMB.
 
+### 🛠️ Ambiente e Ferramentas Utilizadas
+
+| Ferramenta | Tipo | Descrição no Projeto |
+| :--- | :--- | :--- |
+| **Kali Linux (via WSL 2)** | SO Atacante | Distribuição Linux padrão para testes de invasão, executada via WSL 2 para uso nativo no ambiente Windows. |
+| **Metasploitable 2** | SO Alvo | Imagem de VM Linux vulnerável, usada como alvo ético para a simulação de ataque. |
+| **Oracle VirtualBox** | Virtualizador | Software utilizado para isolar e executar a Máquina Virtual Metasploitable 2. |
+| **Nmap** | Reconhecimento | Utilizado para varredura completa de portas e descoberta de serviços ativos e suas versões. |
+| **Medusa** | Exploração | Ferramenta principal utilizada para ataques automatizados de força bruta contra os protocolos FTP, HTTP e SMB. |
+| **enum4linux** | Enumeração | Utilitário usado para enumerar usuários válidos no sistema SMB (Samba). |
+
+---
+
 ---
 
 ## ▶️ Execução
@@ -117,4 +130,21 @@ Confirmado o acesso com as credenciais encontradas:
   <img src="images/login_ok.png" width="550"/>
 </p>
 
-## Gahar acesso `SMB`:
+## Ganhar acesso `SMB`:
+
+Aqui vamos testar a técnica de *password spraying* onde utilizamos um número pequeno de senhas contra muitas contas de usuário diferentes.
+
+Criei dois novos arquivos de *world lists* para esse teste: [usuários](images/smb_user.txt) e [senhas](images/senhas_spray.txt)
+Utilizei o `medusa` para a busca de credenciais válidas:
+
+<p align="center">
+  <img src="images/medusa_smb.png" width="1000"/>
+</p>
+
+As credenciais encontradas foram `msfadmin`para usuário e `msfadmin` para senha, com esses dados, confimei o acesso ao serviço:
+
+<p align="center">
+  <img src="images/smb_ok.png" width="850"/>
+</p>
+
+## Conclusão
