@@ -60,3 +60,19 @@ A execução deste projeto dependeu de um ambiente de laboratório controlado. A
 
 O primeiro passo é certificar que a máquina alvo é encontrada na rede, neste caso o endereço IP da mesma é `192.168.7.232`:
 
+<p align="center">
+  <img src="images/ping.png" width="400"/>
+</p>
+
+Feito isso, utilizo o `nmap` para verificar as portas:
+
+<p align="center">
+  <img src="images/nmap.png" width="500"/>
+</p>
+
+Testei a conexão `ftp` para verificar se o serviço estava mesmo ativo.  
+O próximo passo foi gerar as *world lists* com os nomes de ![usuários](images/users.txt) e ![senhas](pass.txt) :
+
+<p align="center">
+  <img src="images/world_list.png" width="400"/>
+</p>
