@@ -61,7 +61,7 @@ A execução deste projeto dependeu de um ambiente de laboratório controlado. A
 
 * **Nmap:** Ferramenta essencial para o reconhecimento e mapeamento de rede. Ele é utilizado para varredura de portas, identificando serviços ativos e as versões de software em execução no alvo. No pentest, o Nmap é o ponto de partida para descobrir a superfície de ataque da máquina alvo.
 
-* **Medusa:** Uma ferramenta de linha de comando especializada em ataques de força bruta. Foi a principal ferramenta utilizada para automatizar a descoberta de credenciais, testando rapidamente milhares de combinações de usuário e senha contra serviços de rede como FTP e SMB.
+* **medusa:** Uma ferramenta de linha de comando especializada em ataques de força bruta. Foi a principal ferramenta utilizada para automatizar a descoberta de credenciais, testando rapidamente milhares de combinações de usuário e senha contra serviços de rede como FTP e SMB.
 
 * **enum4linux:** Utilitário focado em sistemas SMB (Samba). Ele permite a enumeração detalhada de usuários, grupos de trabalho e informações do sistema. É crucial para obter uma lista de usuários válidos, tornando os ataques de força bruta mais eficientes e direcionados.
   
