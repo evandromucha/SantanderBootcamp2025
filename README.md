@@ -14,12 +14,16 @@
 
 ## Índice
 
-* [Aviso Ético e de Responsabildiade](#-aviso-ético-e-de-responsabilidade) 
-* [1. Sobre o Projeto](#-sobre-o-projeto)
-* [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-* [Execução](#-execução)
-* [Recomendações de Mitigação](#-recomendações-de-mitigação)
-* [Conclusão](#-conclusão)
+* [Aviso Ético e de Responsabilidade](#aviso-ético-e-de-responsabilidade) 
+* [Sobre o Projeto](#1-sobre-o-projeto)
+* [Ambiente e Tecnologias Utilizadas](#2-ambiente-e-tecnologias-utilizadas)
+* [Execução](#3-execução)
+  * [Comunicação Inicial](#31-comunicação-inicial)
+  * [Ganhar acesso ao FTP (porta 21)](#32-ganhar-acesso-ao-ftp-porta-21)
+  * [Ganhar acesso HTTP (DVWA - porta 80)](#33-ganhar-acesso-http-dvwa---porta-80)
+  * [Ganhar acesso SMB (portas 139/445)](#34-ganhar-acesso-smb-portas-139445)
+* [Recomendações de Mitigação](#4-recomendações-de-mitigação)
+* [Conclusão](#5-conclusão)
 
 ---
 
